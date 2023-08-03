@@ -39,7 +39,13 @@ python manage.py runserver
 ```
 3. Запустить celery:
 ```bash
+cd test_o_parser
+. venv/bin/activate
 celery -A test_o_parser worker -l INFO
+```
+4. Создать суперюзера:
+```bash
+python manage.py createsuperuser
 ```
 
 
